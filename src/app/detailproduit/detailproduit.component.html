@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détails produit</title>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header p-0">
+        <img src="{{ produit.image }}" class="card-img-top" alt="{{ produit.titre }}">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ produit.titre | uppercase }}</h5>
+        <p class="card-text">{{ produit.prix | currency:'EUR':'symbol':'1.2-2' }}</p>
+        <p class="card-text">{{ produit.description }}</p>
+        <p class="card-text">Quantité disponible: {{ produit.quantite }}</p>
+        <p class="card-text">Ajouté le: {{ produit.createdAt | date: 'fullDate' }}</p>
+        <button class="btn btn-secondary" (click)="onClose()">Fermer</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

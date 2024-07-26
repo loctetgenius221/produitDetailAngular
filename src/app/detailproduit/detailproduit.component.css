@@ -1,0 +1,9 @@
+.card {
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-header img {
+  height: 300px;
+  object-fit: cover;
+}
