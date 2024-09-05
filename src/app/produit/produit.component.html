@@ -26,7 +26,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title">{{ produit.titre | uppercase }}</h5>
-            <p class="card-text">{{ produit.prix | currency: 'EUR': 'symbol':'1.2-2' }}</p>
+            <p class="card-text">{{ produit.prix | currency: 'EUR': 'symbol':'1.2-2':'fr' }}</p>
           </div>
           <div class="card-footer text-muted">
             Ajouté le: {{ produit.createdAt | date: 'fullDate' }}

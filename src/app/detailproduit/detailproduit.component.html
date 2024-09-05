@@ -14,7 +14,7 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">{{ produit.titre | uppercase }}</h5>
-        <p class="card-text">{{ produit.prix | currency:'EUR':'symbol':'1.2-2' }}</p>
+        <p class="card-text">{{ produit.prix | currency:'EUR':'symbol':'1.2-2':'fr' }}</p>
         <p class="card-text">{{ produit.description }}</p>
         <p class="card-text">Quantité disponible: {{ produit.quantite }}</p>
         <p class="card-text">Ajouté le: {{ produit.createdAt | date: 'fullDate' }}</p>
